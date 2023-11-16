@@ -80,13 +80,13 @@
     <!-- javascript part -->
     <script type="text/javascript">
 
-
+        // fonction qui affiche une message tappé dans l'input
         function afficherMessage() {
-
+            // variable element = input "your-message"
             let element = document.getElementById("your-message");
-            
+            // capture de ce qui est entré dans l'input 
             let message = element.value;
-
+            // appel de la fonction qui affichera une info demandé
             displayResult('Vous avez écrit :', message);
         }
 

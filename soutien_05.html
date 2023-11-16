@@ -79,9 +79,17 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
-
+        let tab =[];
     function lancer() {
-        // Code here
+        // boucle for allant de 0 à 12
+        for (let i = 0; i <= 12; i++){
+        // calcul pour obtenir le resultat    
+        result = i *(i + 1);
+        tab.push(result)
+        // affiche dans la console les chiffres obtenue a chaque tour de boucle par le calcul
+        console.log(result)
+        displayArray(tab)
+        }
     }
 
     </script>

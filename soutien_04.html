@@ -84,8 +84,29 @@
     <script type="text/javascript">
 
     function lancer() {
-        // Code here
+        // boucle for allant de 0 à 12
+        for (let i = 0; i <= 12; i++){
+        // calcul pour obtenir le resultat    
+        result = i *(i + 1);
+        // affiche dans la console les chiffres obtenue a chaque tour de boucle par le calcul
+        console.log(result)
+        }
     }
+    /*question 1 :
+     * Afin de ne compter que les chiffre pair on incrémente i de 2 au lieu de 1
+     * for (let i = 0; i <= 12; i++) deviens donc for (let i = 0; i <= 12; i += 2)
+    */
+
+    /*question 2 :
+     * Afin de ne compter que les chiffre de 5 à 15 on modifie la valeur de i et la condition
+     * for (let i = 0; i <= 12; i++) deviens donc for (let i = 5; i <= 15; i++)
+    */
+
+    /*quesion 3 :
+     * Afin de faire la boucle sur un chiffre défini par l'utilisateur il faudrai ajouter
+     * un input qui serait capturé dans la fonction puis utilisé dans la boucle
+     * for (let i = 0; i <= 12; i++) deviens donc for (let i = 0; i <= input.value; i++)
+    */
 
     </script>
 
