@@ -84,18 +84,21 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
+        /*
+         * création d'un tableau vide qui va recevoir les 
+         * données de la fonction générer tableau.
+        */ 
+        let tab =[]
 /*
  * Cette fonction permet de générer un tableau de chiffre aléatoire entre 0 et 100
  * grace à la fonction random***** de la boite a outils en cliquant sur générer un tableau
  * le tableau apparaitra alors grace a displayArray
 */
+
 function genererTableau() {
-            let n = 20;
-            let min = 0;
-            let max = 100;
-            let tableau = randomArrayOfIntFromInterval(n, min, max);
-            displayArray(tableau);
-            return tableau;
+            tab = randomArrayOfIntFromInterval(20, 0, 100);
+            displayArray(tab);
+            return tab;
         }
 /*
  * Cette fonction permet de filtrer un tableau de chiffre 
@@ -105,15 +108,14 @@ function genererTableau() {
  * le tableau apparaitra alors grace a displayArray
 */
         function filtrerTableau() {
-            let tableauGenerer = genererTableau();
-            let tableauFiltrer = [];
-            for (let i = 0; i < tableauGenerer.length; i++) {
-                if (tableauGenerer[i] >= 50) {
-                    tableauFiltrer.push(tableauGenerer[i])
+            let filterTab = [];
+            for (let i = 0; i < tab.length; i++) {
+                if (tab[i] > 50) {
+                    filterTab.push(tab[i])
                 }
             }
-            console.log(tableauGenerer);
-            displayArray(tableauFiltrer);
+            console.log(tab);
+            displayArray(filterTab);
         }
     </script>
 

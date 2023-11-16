@@ -95,8 +95,8 @@
     <script type="text/javascript">
 
         // Fonction de multiplication 
-        function multiply(number1, number2) {
-            return number1 * number2;
+        function multiply(a, b) {
+            return a * b;
         }
         //fonction appelée par click
         function calculerProduit() {
@@ -109,11 +109,12 @@
                 return;
             }
             // result utilise la fonction multiply
-            result = multiply(n1, n2)
+            result = multiply(n1, n2);
             // appel de la fonction dispo dans tools pour afficher le resultat
-            displayResult(`Voici le résultat de la multiplication : `, result)
+            displayResult(`Voici le résultat de la multiplication : `, result);
+            return;
         }
-        
+    
 
 
     </script>
